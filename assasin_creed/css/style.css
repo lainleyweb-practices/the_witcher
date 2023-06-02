@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+body{
+    background-color: black;
+    color: whitesmoke;
+    background-image: url(/images/PinImage28.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-position: fixed;
+}
+section{
+    height: 100vh;
+    /* background:linear-gradient(45deg, red,blue); */
+    /* padding: 0 40px; */
+}
+.content{
+    padding: 0 40px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+.logo{
+    float: left;
+    
+}
+span{
+    color: red;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    flex: 1;
+    
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    padding: 0 20px;
+    
+}
+li a{
+    color: white;
+    text-transform: uppercase;
+}
+
+li a:hover{
+    color: red;
+}.btn{
+    padding: 5px 22px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.text{
+    margin-top: 70px;
+    /* background:linear-gradient(to right,black,rgba(255, 255, 255, 0.064)); */
+    width: 70%;
+    
+    
+}
+.heading{
+    font-size: 53px;
+}
+.desc{
+    width: 40%;
+    margin-top: 40px;
+    line-height: 27px;
+}
+.butns{ display: flex;
+    margin-top: 30px;
+   gap: 30px;
+
+}
+.butns .btn1{
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.butns .btn2{
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+footer{
+    background-color: red;
+    position: relative;
+    top: 100px;
+    /* margin: 0 -30px; */
+}
+footer p{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+} 
+footer .patners{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    
+}
+section #about{
+    height: 100vh;
+}
+.about .background{
+    background:url(/images/Capture4.PNG);
+   opacity: 0.2;
+   background-size: cover;
+   
+
+}
+.about{
+  
+}
