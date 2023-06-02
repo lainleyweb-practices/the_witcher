@@ -90,17 +90,17 @@ padding: 0 12px;
 .profile{
     height: 50vh;
     display: flex;
-    justify-content: space-between;
-
-    
+    justify-content: space-between;   
 }
 .imagy{
     margin-top: 10px;
-width: 50%;
-height: 420px;
+    width: 50%;
+    height: fit-content;
+    left: 9px;
+    /* height: 420px; */
 /* border: 2px solid red; */
-outline:2px solid grey;
-position: relative;
+    outline:2px solid grey;
+    position: relative;
 }
 .imagy img{
     /* width: 100%; */
@@ -110,20 +110,23 @@ position: relative;
 }
 .desc{
     position: relative;
-    top: 30px;
+    /* top: 30px; */
+    /* margin-top: 20px; */
+    padding-top: 5px;
+    padding-right: 45px;
     background-color: transparent;
     color: red;
-    right: 20px;
-    width: 50%;
-    height: 500px;
-    text-align: right;
-    /* padding: 20px 8px; */
-  
+    /* right: 20px; */
+    width: 45%;
+    /* height: 500px; */
+    height: fit-content;
+    text-align: justify;
+    text-align: end;
 }
 .desc p{
     float: right;
     word-wrap: break-word;
-    width: 700px;
+    /* width: 700px; */
     margin-bottom: 20px;
 }
 .heading,h2{
@@ -134,17 +137,23 @@ position: relative;
     background-color: transparent;
     line-height: 23px;
 }
+.desc h2,h3,span{
+    text-align: center;
+    /* margin: 20px; */
+}
 a{
     background-color: transparent;
 }
+
 .btn3{
-    margin: 20px;
+    /* margin: 20px; */
     padding: 10px 15px;
     background-color: red;
     color: white;
-    box-shadow: 10px 10px firebrick;
+    /* box-shadow: 10px 10px firebrick; */
     transition: 0.5s;
     cursor: pointer;
+    
 }
 .btn3:hover{
     transform: translate(5px,12px);
@@ -153,23 +162,26 @@ a{
 }
 .extra{
     margin-top: 75px;
-    justify-content: space-between;
+    /* justify-content: center; */
+    justify-content: space-evenly;
     display: flex;   
     position: absolute;
+    /* right:3px; */
     background-color: antiquewhite;
-    width: 100%;
+
+    
 }
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* margin: 10px; */
+    /* margin: 20px; */
     /* background-color: red; */
-    width: 100%;
 }
 .box{
     display: flex;
     flex-direction: column;
+    /* justify-content: space-around; */
     width: 350px;
     /* height: 250px; */
     border: 1px solid wheat;
@@ -185,3 +197,62 @@ a{
 
 }
 
+
+@media screen and (max-width:1200px) {
+
+    
+
+    @media screen and (max-width:768px) {
+        header{
+            justify-content: space-between;
+    
+        }
+        nav{
+            display: none;
+        }
+        .about{
+            width: 500px;
+            /* background-color: wheat; */
+        }
+        .profile{
+            display: block;
+        }
+        .imagy{
+            width: 100%;
+            width: fit-content;
+            outline: none;
+        }
+        .desc{
+            margin-top: 10px;
+            text-align: justify;
+            width: 100%;
+            height: 245px;
+            background: transparent;
+            /* border: 2px solid red; */
+        }
+        .desc h3,span{
+            margin-top: 5px;
+            line-height: 28px;
+            font-size: 18px;
+        }
+        .desc p{
+            line-height: 18px;
+            padding-left:30px;
+        }
+        .desc .btn3{
+            position: relative;
+            top: -15px;
+            left: 170px;
+            /* float: right; */
+        }
+        .extra{
+            /* margin-top: 110px; */
+            float: left;
+            display: flex;
+            position: relative;
+        }
+        .box{
+            width: 200px;
+        }
+    }
+}
