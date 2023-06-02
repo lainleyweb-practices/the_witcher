@@ -129,6 +129,29 @@ section #about{
    
 
 }
-.about{
-  
+@media screen and (max-width:860px) {
+    
+    header .btn{display: none;
+    }
+   nav{
+    display: none;
+   }
+    .desc{
+       
+        background:linear-gradient(to top,black,rgb(49, 19, 19),black);
+        font-size: 15px;
+        line-height: 22px;/* background: transparent; */
+        position: relative;
+        /* position: absolute; */
+        width: 190%;
+        right:38px;
+        top: 30px;
+        height: 300px;
+    }
+    .btn1{
+        text-transform: lowercase;
+    }
+    .btn2{
+        text-transform: lowercase;
+    }
 }
