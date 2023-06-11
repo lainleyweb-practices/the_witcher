@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    background: black;
+    color: white;
+}
+.container{
+    height: 80vh;
+    
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    /* background-color: bisque; */
+    padding: 15px 23px;
+}
+.logo{
+    float: left;
+}
+span{
+    color: red;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    flex: 1;
+    background-color: transparent;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    padding: 0 20px;
+    background-color: transparent; 
+}
+li a:link{
+    color: white;
+    text-transform: uppercase;
+}
+li a:visited{
+    color: whitesmoke;
+}
+li a:hover{
+    color: red;
+    cursor: pointer;
+}
+li a:active{
+    color: red;
+}
+.btn{
+    padding: 5px 22px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.btn:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:860px) {
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: 100px;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+}
+
+
+
+
+
+#about{
+    height: 90vh;
+}
+
+.background{
+    position: absolute;
+    opacity: 0.3;
+    overflow: visible;
+    width: 100%;
+    height: 90vh;
+}
+.about{
+background-color: white;
+height: 100%;
+padding: 0 12px;
+
+}
+
+@media screen and (max-width:1200px) {
+
+    
+
+    @media screen and (max-width:768px) {
+        header{
+            justify-content: space-between;
+    
+        }
+        nav{
+            display: none;
+        }
+        .about{
+            width: 500px;
+            /* background-color: wheat; */
+        }
+    }
+}
