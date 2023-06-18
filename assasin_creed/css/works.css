@@ -12,11 +12,15 @@
 }
 body{
     /* overflow: hidden; */
-    background-color: white;
+    /* background:linear-gradient(to top,white,grey,white); */
+    /* background: rgba(64, 64, 64, 0.36); */
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    /* background-color: rgba(202, 194, 194, 0.418); */
 
     }
     .container{
-        height: 80vh;
+        height: 100vh;
     }
 
 header{
@@ -94,9 +98,98 @@ li a:active{
 
 
 
-.play{
-    padding: 4px 20px;
+#portfolio{
+    padding: 0px 50px;
+    justify-content: space-around;
+    align-content: center;
+    /* background-color: rgba(202, 194, 194, 0.418); */
 }
+.port{
+    display:flex;
+    /* justify-content: space-between; */
+    position: relative;
+    /* top: 80px; */
+    height: 90vh;
+}
+.text-box{
+    /* width: 900px; */
+    width: 50%;
+    height: 500px;
+    line-height: 27px;
+    word-spacing: 6px;
+    font-size: 17px;
+    margin-left:30px;
+    text-align: justify;
+    position: relative;
+    top: 100px;
+    /* background-color: antiquewhite; */
+  
+}
+.text-box h2{
+    color: red;
+    text-align:center;
+    margin-bottom: 50px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* background-color: aqua; */
+    align-items: center;
+    margin: 85px 0px;
+    width: 50%;
+}
+.row{
+    display: flex;
+    /* margin: 0 20px; */
+}
+.card{
+    width: 450px;
+    height: 250px;
+    border: 2px solid black;
+    /* margin:  15px; */
+}
+.text-box2{
+    width: 900px;
+    height: 500px;
+   
+    line-height: 27px;
+    font-size: 17px;
+    margin-left:30px;
+    text-align: justify;
+    position: relative;
+    top: 50px;
+    /* background-color: antiquewhite; */
+  
+}
+.text-box h2{
+    color: red;
+    text-align:center;
+    margin-bottom: 50px;
+}
+.gallery2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin: 85px 0px;
+}
+.row{
+    display: flex;
+    /* margin: 0 20px; */
+}
+.card{
+    width: 270px;
+    height: 250px;
+    border: 2px solid black;
+    margin:  15px;
+}
+
+
+
+
+
+
 
 
 @media screen and (max-width:1200px) {
