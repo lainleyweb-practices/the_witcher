@@ -6,12 +6,13 @@
     outline: none;
     border: none;
     scroll-behavior: smooth;
-    list-style: none;
-    background: black;
-    color: white;
+    /* list-style: none; */
+    /* background: black; */
+    /* color: white; */
 }
 body{
     /* overflow: hidden; */
+    background-color: white;
 
     }
     .container{
@@ -25,6 +26,7 @@ header{
     padding: 20px 0;
     background-color: black;
     padding: 15px 23px;
+    color: white;
 }
 .logo{
     float: left;
@@ -37,11 +39,14 @@ nav{
     justify-content: center;
     font-size: 18px;
     flex: 1;
+    list-style-type: none;
+    
     
 }
 ul{
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
 }
 li{
     padding: 0 20px;
@@ -89,134 +94,8 @@ li a:active{
 
 
 
-
-
-#about{
-    height: 90vh;
-}
-
-.background{
-    position: absolute;
-    opacity: 0.6;
-    overflow: visible;
-    width: 100%;
-    height: 90vh;
-    background-color: antiquewhite;
-}
-.about{
-background-color: white;
-height: 100%;
-padding: 0 12px;
-
-}
-.profile{
-    height: 50vh;
-    display: flex;
-    justify-content: space-between;   
-}
-.imagy{
-    margin-top: 10px;
-    width: 50%;
-    height: fit-content;
-    left: 9px;
-    /* height: 420px; */
-/* border: 2px solid red; */
-    outline:2px solid grey;
-    position: relative;
-}
-.imagy img{
-    /* width: 100%; */
-    /* height: auto; */
-    /* width: 24px; */
-    /* height: 100%; */
-}
-.desc{
-    position: relative;
-    /* top: 30px; */
-    /* margin-top: 20px; */
-    padding-top: 5px;
-    padding-right: 45px;
-    background-color: transparent;
-    color: red;
-    /* right: 20px; */
-    width: 45%;
-    /* height: 500px; */
-    height: fit-content;
-    text-align: justify;
-    text-align: end;
-}
-.desc p{
-    float: right;
-    word-wrap: break-word;
-    /* width: 700px; */
-    margin-bottom: 20px;
-}
-.heading,h2{
-
-    background-color: transparent;
-}
-.desc h2,h3,p,span{
-    background-color: transparent;
-    line-height: 23px;
-}
-.desc h2,h3,span{
-    text-align: center;
-    /* margin: 20px; */
-}
-a{
-    background-color: transparent;
-}
-
-.btn3{
-    /* margin: 20px; */
-    padding: 10px 15px;
-    background-color: red;
-    color: white;
-    /* box-shadow: 10px 10px firebrick; */
-    transition: 0.5s;
-    cursor: pointer;
-    
-}
-.btn3:hover{
-    transform: translate(5px,12px);
-    position: relative;
-    
-}
-.extra{
-    margin-top: 75px;
-    /* justify-content: center; */
-    justify-content: space-evenly;
-    display: flex;   
-    position: absolute;
-    /* right:3px; */
-    background-color: antiquewhite;
-
-    
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* margin: 20px; */
-    /* background-color: red; */
-}
-.box{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    width: 350px;
-    /* height: 250px; */
-    border: 1px solid wheat;
-    margin: 6px;
-}
-.box img{
-    /* height: 240px; */
-    
-}
-.box:hover{
-    transform: scale(1.05);
-    top: 5px;
-
+.play{
+    padding: 4px 20px;
 }
 
 
@@ -235,46 +114,6 @@ a{
         .about{
             width: 500px;
             /* background-color: wheat; */
-        }
-        .profile{
-            display: block;
-        }
-        .imagy{
-            width: 100%;
-            width: fit-content;
-            outline: none;
-        }
-        .desc{
-            margin-top: 10px;
-            text-align: justify;
-            width: 100%;
-            height: 245px;
-            background: transparent;
-            /* border: 2px solid red; */
-        }
-        .desc h3,span{
-            margin-top: 5px;
-            line-height: 28px;
-            font-size: 18px;
-        }
-        .desc p{
-            line-height: 18px;
-            padding-left:30px;
-        }
-        .desc .btn3{
-            position: relative;
-            top: -15px;
-            left: 170px;
-            /* float: right; */
-        }
-        .extra{
-            /* margin-top: 110px; */
-            float: left;
-            display: flex;
-            position: relative;
-        }
-        .box{
-            width: 200px;
         }
     }
 }

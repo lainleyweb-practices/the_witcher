@@ -7,11 +7,11 @@
     border: none;
     scroll-behavior: smooth;
     list-style: none;
-    background: black;
-    color: white;
+    /* background: black; */
+    /* color: white; */
 }
 .container{
-    height: 80vh;
+    height:100%;
     
 }
 header{
@@ -19,8 +19,9 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
-    /* background-color: bisque; */
+    background-color: black;
     padding: 15px 23px;
+    color: white;
 }
 .logo{
     float: left;
@@ -87,22 +88,124 @@ li a:active{
 
 
 
-#about{
+#new{
     height: 90vh;
 }
 
-.background{
-    position: absolute;
-    opacity: 0.3;
-    overflow: visible;
-    width: 100%;
-    height: 90vh;
-}
-.about{
-background-color: white;
+
+.blog{
+/* background-color: wheat; */
 height: 100%;
 padding: 0 12px;
+display:flex;
 
+}
+.side-blog{
+    width: 300px;
+    float: left;
+    position: relative;
+    top: 4px;
+    overflow: scroll; 
+}
+.comment{
+    display: flex;
+    align-items: center;
+    margin: 23px 4px;
+}
+.imge{
+    width: 100px;
+    border-radius: 45%;
+    position: relative;
+}
+.imge img{
+    border-radius: 55%;   
+}
+.text{
+    width:200px;
+    padding-left: 20px;
+}
+.comment:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+.main-blog{
+    width: 800px;
+    background-color: rgba(202, 194, 194, 0.418);
+    margin: 5px 42px;
+    overflow: auto;
+}
+.heading{
+    font-size: 24px;
+}
+.news{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.pic{
+    width: 350px;
+    margin:12px 2px;
+}
+.pic img{
+    border-radius: 5px;
+}
+.more-info{
+    width: 350px;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 17px;
+}
+
+.right-blog{
+    width: 350px;
+    /* border: 2px solid black; */
+    background-color: white;
+    position: relative;
+    top: 4px;
+}
+.post{
+    font-family: cursive;
+   
+}
+.post-1{
+    display: flex;
+    align-items: center;
+    margin: 0 13px;
+    /* background-color: rgb(219, 214, 207); */
+}
+.post-1:hover{
+    background-color: rgb(219, 214, 207);
+}
+.post-1 h1{
+    font-size: 53px;
+}
+.links{
+    margin: 0 12px;
+}
+.box{
+   margin: 6px 0px;
+   display: flex;
+   align-items: center;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box-icon{
+    width: 80px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.box-icon h2{
+    color: coral;
+    font-size: 42px;
+    margin-right: 12px;
+}
+.box-info{
+    margin: 0 25px;
+    font-size: 18px;
+    
+}
+.box:hover{
+    cursor: pointer;
+    border: 2px solid grey;
 }
 
 @media screen and (max-width:1200px) {
@@ -117,9 +220,74 @@ padding: 0 12px;
         nav{
             display: none;
         }
-        .about{
-            width: 500px;
+        .new{
+            /* width: 500px; */
             /* background-color: wheat; */
         }
+        .side-blog{
+            /* display:grid; */
+            /* width: 150px; */
+            /* margin: -20px; */
+        }
+        .comment{
+            font-size: 13px;
+        }
+        .text{
+            width:300px;
+            /* background-color: aqua */
+        }
+        .imge{
+            width: 90px;
+        }
+        .main-blog{
+            /* display: grid; */
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            /* overflow: scroll; */
+            /* background-color: blue; */
+        }
+        .news{
+            /* background-color: blue; */
+            height: 300px;
+            margin-top: -100px;
+        }
+        .main-blog img{
+            /* display: none; */
+            width: 30px;
+        }
+        .right-blog{
+            /* display: none; */
+            float: left;
+            /* position: absolute; */
+        }
+        .news .more-info{ 
+            font-size: 12px;
+            height: 150px;
+            overflow: scroll;
+        }
+        .right-blog{
+            width: 200px;
+        }
+        .post,.post-1{
+            font-size: 12px;
+        }
+        .box{
+            width: 150px
+        }
+        .box-icon,h2,p{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width:425px){
+        .side-blog,.right-blog{
+            display: none;
+        }
+    }
+    .main-blog{
+        display: block;
+        background-color: aqua;
+        width: 100%;
+        margin-left:-10px;
     }
 }

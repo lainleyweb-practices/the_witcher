@@ -11,11 +11,12 @@
     color: white;
 }
 body{
+    /* height: 100vh; */
     /* overflow: hidden; */
 
     }
     .container{
-        height: 80vh;
+        height: 100vh;
     }
 
 header{
@@ -96,23 +97,26 @@ li a:active{
 
 #about{
     height: 90vh;
+       /* background-color: aqua; */
 }
 
 .background{
     position: absolute;
     opacity: 0.2;
-    overflow: visible;
+    /* overflow: visible; */
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
 }
 .about{
-/* background-color: wheat; */
-height: 100%;
+    color: #000;
+background-color: whitesmoke;
+height: 92vh;
 padding: 0 12px;
 
 }
 .profile{
     height: 50vh;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;   
 }
@@ -135,12 +139,12 @@ padding: 0 12px;
 }
 .desc{
     position: relative;
-    /* top: 30px; */
+    top: 40px;
     /* margin-top: 20px; */
     padding-top: 15px;
     padding-right: 45px;
     background-color: transparent;
-    color: red;
+    color: black;
     /* right: 20px; */
     width: 45%;
     /* height: 500px; */
@@ -151,11 +155,13 @@ padding: 0 12px;
 .desc h2{
     font-size: 30px;
     text-align: center;
+    color: #000;
 }
 .desc h3,.descspan{
     font-size: 32px;
     margin-top: 20px;
     text-align: center;
+    /* color: #000; */
 }
 .desc h2,h3,p,span{
     background-color: transparent;
@@ -164,8 +170,9 @@ padding: 0 12px;
 .desc p{
     float: right;
     word-wrap: break-word;
+    color: #000;
     /* width: 700px; */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .heading,h2{
 
@@ -175,9 +182,15 @@ padding: 0 12px;
 a{
     background-color: transparent;
 }
-
+.action{
+    background-color: transparent;
+    /* width: 100%; */
+    display:inline-block;   
+    justify-content: center; 
+    margin: 0 120px;
+}
 .btn3{
-    /* margin: 20px; */
+    margin: 0 30px;
     padding: 10px 15px;
     background-color: red;
     color: white;
@@ -190,19 +203,16 @@ a{
 .btn3:hover{
     transform: translate(5px,12px);
     position: relative;
+    border: 2px solid black;
     
 }
 .extra{
-    
-    /* margin-top: 75px; */
-    /* justify-content: center; */
-    /* justify-content: space-evenly; */
-    /* display: flex;    */
-    /* position: absolute; */
+    justify-content: space-between;
+   /* position: absolute; */
     position: relative;
-    top: 120px;
+    top: 110px;
     background: transparent;
-    /* right:3px; */
+    /* right:23px; */
     /* background-color: antiquewhite; */
 
     
@@ -282,6 +292,9 @@ a{
             top: -15px;
             left: 170px;
             /* float: right; */
+        }
+        .action{
+            
         }
         .extra{
             /* margin-top: 110px; */
