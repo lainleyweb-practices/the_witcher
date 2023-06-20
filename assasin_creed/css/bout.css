@@ -27,8 +27,9 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
-    /* background-color: black; */
+    /* background-color: rgba(21, 18, 18, 0.938); */
     background-color: transparent;
+    background-color: rgba(30, 36, 142, 0.247);
     padding: 15px 23px;
 }
 .logo{
@@ -44,14 +45,17 @@ nav{
     flex: 1;
     background-color: transparent;
     
+    
 }
 ul{
     display: flex;
     justify-content: space-between;
+    
 }
 li{
     padding: 0 20px;
     background-color: transparent;
+    background-color: rgba(30, 36, 142, 0.247);
     
 }
 li a:link{
@@ -108,13 +112,15 @@ li a:active{
     opacity: 0.2;
     /* overflow: visible; */
     width: 100%;
-    /* height: 90vh; */
+    /* height: 40vh; */
 }
 .about{
-    color: #000;
-/* background-color: whitesmoke; */
-background: linear-gradient(to top,white,burlywood,white);
-background: linear-gradient(to top,white,rgb(226, 209, 172),white);
+    color: whitesmoke;
+background-color: rgba(30, 36, 142, 0.247);
+/* background: linear-gradient(to top,rgba(30, 36, 142, 0.247), #7795b2); */
+/* background-color: #2F435B; */
+/* background: linear-gradient(to top,rgba(30, 36, 142, 0.247),navy,#2F435B); */
+/* background: linear-gradient(to top,white,rgb(226, 209, 172),white); */
 height: 92vh;
 padding: 0 12px;
 
@@ -124,32 +130,26 @@ padding: 0 12px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;   
+    position: relative;
+    top: 10px;
 }
 .imagy{
-    margin-top: 15px;
+    /* margin-top: 15px; */
     width: 50%;
-    height: fit-content;
-    /* left: 9px; */
-    /* height: 420px; */
-/* border: 2px solid red; */
     outline:2px solid grey;
     position: relative;
-    left: -7px;
-}
-.imagy img{
-    /* width: 100%; */
-    /* height: auto; */
-    /* width: 24px; */
-    /* height: 100%; */
+    top: 40px;
+    /* left: -7px; */
+    border-radius: 5px;
 }
 .desc{
     position: relative;
-    top: 40px;
+    top: 0px;
     /* margin-top: 20px; */
     padding-top: 15px;
     padding-right: 45px;
     background-color: transparent;
-    color: black;
+    /* color: black; */
     /* right: 20px; */
     width: 45%;
     /* height: 500px; */
@@ -157,12 +157,16 @@ padding: 0 12px;
     text-align: justify;
     /* text-align: end; */
 }
+
 .desc h2{
     font-size: 30px;
     font-family: 'Rubik Moonrocks', cursive;
     font-family: 'Frank Ruhl Libre', serif;
     text-align: center;
     color: #000;
+}
+.desc h3{
+    font-family:Arial, Helvetica, sans-serif;
 }
 .desc h3,.descspan{
     font-size: 32px;
@@ -177,7 +181,11 @@ padding: 0 12px;
 .desc p{
     float: right;
     word-wrap: break-word;
-    color: #000;
+    /* color: #000; */
+    color: azure;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: monospace;
     /* width: 700px; */
     margin-bottom: 40px;
 }
@@ -237,12 +245,15 @@ a{
     flex-direction: column;
     /* justify-content: space-around; */
     width: 350px;
-    /* height: 250px; */
+    border-radius: 5px;
+    background-color: transparent;
+    /* height: fit-content; */
     /* border: 1px solid wheat; */
     margin: 6px;
 }
 .box img{
     /* height: 240px; */
+    border-radius: 5px;
     
 }
 .box:hover{
