@@ -167,6 +167,8 @@ display:flex;
 .pic img{
     border-radius: 5px;
 }
+
+
 .more-info{
     width: 350px;
     margin-left: 20px;
@@ -176,34 +178,17 @@ display:flex;
 
 .right-blog{
     width: 350px;
-    /* border: 2px solid black; */
-    /* background-color: white; */
-    /* background: transparent; */
+    
     position: relative;
     top: 4px;
 }
-.post h2{
-    /* color: rgb(26, 101, 96); */
-}
 .post{
     font-family: cursive;
-   
 }
-.post-1{
-    display: flex;
-    align-items: center;
-    margin: 0 13px;
-    /* background-color: rgb(219, 214, 207); */
+.post h2{
+    color: coral
 }
-.post-1:hover{
-    background-color: rgb(219, 214, 207);
-}
-.post-1 h1{
-    font-size: 53px;
-}
-.links{
-    margin: 0 12px;
-}
+
 .box{
    margin: 6px 0px;
    display: flex;
@@ -223,12 +208,12 @@ display:flex;
 }
 .box-info{
     margin: 0 25px;
-    font-size: 18px;
-    
+    font-size: 18px; 
 }
 .box:hover{
     cursor: pointer;
-    border: 2px solid grey;
+    border: 1px solid grey;
+    /* margin: 13px 0; */
 }
 
 @media screen and (max-width:1200px) {

@@ -7,8 +7,8 @@
     border: none;
     scroll-behavior: smooth;
     /* list-style: none; */
-    /* background: black; */
-    /* color: white; */
+    background: black;
+    color: white;
 }
 body{
     /* background-image: url(/images/R2.jpg); */
@@ -105,18 +105,18 @@ li a:active{
 
 
 #portfolio{
-    /* overflow: scroll; */
-    /* padding: 0px 50px; */
-    justify-content: space-around;
-    align-content: center;
-    background-color: rgba(202, 194, 194, 0.418);
+   
+    /* justify-content: space-around; */
+    /* align-content: center; */
+    height: 70vh;
+    /* background-color: rgba(202, 194, 194, 0.418); */
 }
 
 .background{
     position: absolute;
-    opacity: 0.9;
+    opacity: 0.4;
     /* overflow:scroll; */
-    /* width: 100%; */
+    width: 100%;
     /* height: cover; */
 }
 .gaming{
