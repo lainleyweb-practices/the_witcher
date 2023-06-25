@@ -29,7 +29,8 @@ header{
     padding: 20px 0;
     /* background-color: rgba(21, 18, 18, 0.938); */
     background-color: transparent;
-    background-color: rgba(30, 36, 142, 0.247);
+    /* background-color: rgba(30, 36, 142, 0.247); */
+    /* background-color:rgba(137, 135, 135, 0.537); */
     padding: 15px 23px;
 }
 .logo{
@@ -55,7 +56,7 @@ ul{
 li{
     padding: 0 20px;
     background-color: transparent;
-    background-color: rgba(30, 36, 142, 0.247);
+    /* background-color: rgba(30, 36, 142, 0.247); */
     
 }
 li a:link{
@@ -103,7 +104,7 @@ li a:active{
 
 
 #about{
-    height: 90vh;
+    /* height: 90vh; */
        /* background-color: aqua; */
 }
 
@@ -112,13 +113,13 @@ li a:active{
     opacity: 0.2;
     /* overflow: visible; */
     width: 100%;
-    /* height: 40vh; */
+    height: 80vh;
 }
 .about{
     color: whitesmoke;
-background-color: rgba(30, 36, 142, 0.247);
+/* background-color: rgba(30, 36, 142, 0.547); */
 /* background: linear-gradient(to top,rgba(30, 36, 142, 0.247), #7795b2); */
-/* background-color: #2F435B; */
+/* background-color: #8C9BAC; */
 /* background: linear-gradient(to top,rgba(30, 36, 142, 0.247),navy,#2F435B); */
 /* background: linear-gradient(to top,white,rgb(226, 209, 172),white); */
 height: 92vh;
@@ -131,14 +132,15 @@ padding: 0 12px;
     display: flex;
     justify-content: space-between;   
     position: relative;
-    top: 10px;
+    /* top: 10px; */
 }
 .imagy{
     /* margin-top: 15px; */
     width: 50%;
-    outline:2px solid grey;
+    /* outline:2px solid grey; */
     position: relative;
     top: 40px;
+    height: fit-content;
     /* left: -7px; */
     border-radius: 5px;
 }
@@ -265,8 +267,16 @@ a{
 
 
 @media screen and (max-width:1200px) {
-
-    
+nav{
+    display: none;
+}
+.desc{}
+.desc h3{
+    font-size: 16px;
+}
+.desc p{
+    font-size: 14px;
+}
 
     @media screen and (max-width:768px) {
         header{
@@ -287,6 +297,7 @@ a{
             width: 100%;
             width: fit-content;
             outline: none;
+            margin-bottom: 30px;
         }
         .desc{
             margin-top: 10px;
@@ -298,21 +309,19 @@ a{
         }
         .desc h3,span{
             margin-top: 5px;
-            line-height: 28px;
+            /* line-height: 28px; */
             font-size: 18px;
         }
         .desc p{
             line-height: 18px;
             padding-left:30px;
         }
-        .desc .btn3{
+        .desc .action{
             position: relative;
-            top: -15px;
-            left: 170px;
+            display: flex;
+            /* top: -15px; */
+            /* left: 170px; */
             /* float: right; */
-        }
-        .action{
-            
         }
         .extra{
             /* margin-top: 110px; */

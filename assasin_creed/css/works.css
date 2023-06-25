@@ -11,17 +11,19 @@
     /* color: white; */
 }
 body{
-    /* overflow: hidden; */
+    /* background-image: url(/images/R2.jpg); */
+    /* overflow: scroll; */
     /* background:linear-gradient(to top,white,grey,white); */
     /* background: rgba(64, 64, 64, 0.36); */
     /* background-color: rgba(201, 117, 39, 0.904); */
     /* background:linear-gradient(to top,white,rgba(201, 117, 39, 0.904),white); */
-    color: white;
-    background-color: rgba(15, 14, 14, 0.932);
+    /* color: white; */
+    /* background-color: rgba(15, 14, 14, 0.932); */
 
     }
     .container{
-        height: 100vh;
+        /* height: 100vh; */
+        /* overflow: scroll; */
     }
 
 header{
@@ -32,6 +34,8 @@ header{
     background-color: black;
     padding: 15px 23px;
     color: white;
+    /* position: fixed; */
+    /* width: 100%; */
 }
 .logo{
     float: left;
@@ -45,6 +49,7 @@ nav{
     font-size: 18px;
     flex: 1;
     list-style-type: none;
+    /* position: fixed; */
     
     
 }
@@ -100,17 +105,31 @@ li a:active{
 
 
 #portfolio{
-    padding: 0px 50px;
+    overflow: scroll;
+    /* padding: 0px 50px; */
     justify-content: space-around;
     align-content: center;
-    /* background-color: rgba(202, 194, 194, 0.418); */
+    background-color: rgba(202, 194, 194, 0.418);
+}
+
+.background{
+    position: absolute;
+    opacity: 0.9;
+    /* overflow:scroll; */
+    /* width: 100%; */
+    /* height: cover; */
+}
+.gaming{
+    /* background-color: blue; */
+    
 }
 .port{
     display:flex;
     /* justify-content: space-between; */
     position: relative;
+    /* background-color: aqua; */
     /* top: 80px; */
-    height: 90vh;
+    /* height: 90vh; */
 }
 .text-box{
     /* width: 900px; */
@@ -124,6 +143,7 @@ li a:active{
     position: relative;
     top: 100px;
     /* background-color: antiquewhite; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 .text-box h2{
@@ -147,7 +167,7 @@ li a:active{
 .card{
     width: 450px;
     height: 250px;
-    border: 2px solid black;
+    border: 2px solid black; 
     /* margin:  15px; */
 }
 .text-box2{
