@@ -84,10 +84,22 @@ nav a:hover {
     cursor: pointer;
 }
 
+.heading span {
+    color: red;
+}
+
 /* Mobile Styles */
 @media (max-width: 425px) {
+    #nav-toggle {
+        display: none;
+    }
+
     .nav-icon {
         display: block;
+    }
+
+    #close-icon {
+        display: none;
     }
 
     nav {
@@ -136,6 +148,30 @@ nav a:hover {
 
     .btn {
         display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:860px) {
+    #nav-toggle {
+        display: none;
+    }
+
+    .text {
+        width: 100%;
+        /* background-color: beige; */
+    }
+
+    .desc {
+        /* background-color: aqua; */
+        padding-top: 240px;
+        width: 100%;
+    }
+
+    .desc p {
+        text-align: justify;
+        padding: 0 40px;
+        width: 700px;
+        /* font-size: 40px; */
     }
 }
 
@@ -206,7 +242,6 @@ footer {
     background-color: red;
     position: relative;
     top: 100px;
-    /* margin: 0 -30px; */
 }
 
 footer p {
