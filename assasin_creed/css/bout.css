@@ -1,7 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@600&family=Poppins&family=Rubik+Moonrocks&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@600&family=Poppins&family=Rubik+Moonrocks&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,16 +12,18 @@
     background: black;
     color: white;
 }
-body{
+
+body {
     /* height: 100vh; */
     overflow: hidden;
 
-    }
-    .container{
-        height: 100vh;
-    }
+}
 
-header{
+.container {
+    height: 100vh;
+}
+
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -33,57 +34,69 @@ header{
     /* background-color:rgba(137, 135, 135, 0.537); */
     padding: 15px 23px;
 }
-.logo{
+
+.logo {
     float: left;
 }
-span{
+
+span {
     color: red;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
     font-size: 18px;
     flex: 1;
     background-color: transparent;
-    
-    
+
+
 }
-ul{
+
+ul {
     display: flex;
     justify-content: space-between;
-    
+
 }
-li{
+
+li {
     padding: 0 20px;
     background-color: transparent;
     /* background-color: rgba(30, 36, 142, 0.247); */
-    
+
 }
-li a:link{
+
+li a:link {
     color: white;
     text-transform: uppercase;
 }
-li a:visited{
+
+li a:visited {
     color: whitesmoke;
 }
-li a:hover{
+
+li a:hover {
     color: red;
     cursor: pointer;
 }
-li a:active{
+
+li a:active {
     color: red;
 }
-.btn{
+
+.btn {
     padding: 5px 22px;
     background-color: red;
     color: white;
     font-weight: bold;
 }
-.btn:hover{
+
+.btn:hover {
     cursor: pointer;
 }
+
 @media screen and (max-width:860px) {
-    nav ul{
+    nav ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -91,96 +104,96 @@ li a:active{
         left: 100px;
         text-align: center;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
-    
+
 }
 
 
 
 
 
-#about{
-    /* height: 90vh; */
-       background-color: aqua;
+#about {
+    height: 100vh;
 }
 
-.background{
+.background {
     position: absolute;
     opacity: 0.2;
-    /* overflow: visible; */
     width: 100%;
-    height: 80vh;
 }
-.about{
-    color: whitesmoke;
-/* background-color: rgba(30, 36, 142, 0.547); */
-/* background: linear-gradient(to top,rgba(30, 36, 142, 0.247), #7795b2); */
-/* background-color: #8C9BAC; */
-/* background: linear-gradient(to top,rgba(30, 36, 142, 0.247),navy,#2F435B); */
-/* background: linear-gradient(to top,white,rgb(226, 209, 172),white); */
-height: 92vh;
-padding: 0 12px;
 
+.about {
+    color: whitesmoke;
+    height: 92vh;
+    padding: 0 52px;
 }
-.profile{
+
+.profile {
     height: 50vh;
     background-color: transparent;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
     position: relative;
-    /* top: 10px; */
 }
-.imagy{
-    /* margin-top: 15px; */
+
+.imagy {
     width: 50%;
-    /* outline:2px solid grey; */
     position: relative;
     top: 40px;
     height: fit-content;
-    /* left: -7px; */
     border-radius: 5px;
 }
-.desc{
-    position: relative;
-    top: 0px;
-    /* margin-top: 20px; */
-    padding-top: 15px;
-    padding-right: 45px;
-    background-color: transparent;
-    /* color: black; */
-    /* right: 20px; */
-    width: 45%;
-    /* height: 500px; */
-    height: fit-content;
-    text-align: justify;
-    /* text-align: end; */
+
+.imagy:hover {
+    border: 2px solid grey;
+    cursor: pointer;
 }
 
-.desc h2{
+.desc {
+    position: relative;
+    top: 0px;
+    padding-top: 15px;
+    padding-right: 40px;
+    background-color: transparent;
+    width: 40%;
+    height: fit-content;
+    text-align: justify;
+}
+
+.desc h2 {
     font-size: 30px;
     font-family: 'Rubik Moonrocks', cursive;
     font-family: 'Frank Ruhl Libre', serif;
     text-align: center;
     color: #000;
 }
-.desc h3{
-    font-family:Arial, Helvetica, sans-serif;
+
+.desc h3 {
+    font-family: Arial, Helvetica, sans-serif;
 }
-.desc h3,.descspan{
+
+.desc h3,
+.descspan {
     font-size: 32px;
     margin-top: 20px;
     text-align: center;
     /* color: #000; */
 }
-.desc h2,h3,p,span{
+
+.desc h2,
+h3,
+p,
+span {
     background-color: transparent;
     line-height: 23px;
 }
-.desc p{
+
+.desc p {
     float: right;
     word-wrap: break-word;
     /* color: #000; */
@@ -191,22 +204,26 @@ padding: 0 12px;
     /* width: 700px; */
     margin-bottom: 40px;
 }
-.heading,h2{
+
+.heading,
+h2 {
 
     background-color: transparent;
 }
 
-a{
+a {
     background-color: transparent;
 }
-.action{
+
+.action {
     background-color: transparent;
     /* width: 100%; */
-    display:inline-block;   
-    justify-content: center; 
+    display: inline-block;
+    justify-content: center;
     margin: 0 120px;
 }
-.btn3{
+
+.btn3 {
     margin: 0 30px;
     padding: 10px 15px;
     background-color: red;
@@ -215,50 +232,54 @@ a{
     transition: 0.5s;
     cursor: pointer;
     /* float:right; */
-    
+
 }
-.btn3:hover{
-    transform: translate(5px,12px);
+
+.btn3:hover {
+    transform: translate(5px, 12px);
     position: relative;
     border: 2px solid black;
-    
+
 }
-.extra{
+
+.extra {
     justify-content: space-between;
-   /* position: absolute; */
+    /* position: absolute; */
     position: relative;
     top: 110px;
     background: transparent;
     /* right:23px; */
     /* background-color: antiquewhite; */
-
-    
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     /* margin: 20px; */
     background: transparent;
     /* background-color: red; */
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
     /* justify-content: space-around; */
-    width: 350px;
+    width: 400px;
     border-radius: 5px;
     background-color: transparent;
     /* height: fit-content; */
     /* border: 1px solid wheat; */
     margin: 6px;
 }
-.box img{
+
+.box img {
     /* height: 240px; */
     border-radius: 5px;
-    
+
 }
-.box:hover{
+
+.box:hover {
     transform: scale(1.05);
     top: 5px;
     border: 1px solid wheat;
@@ -267,41 +288,49 @@ a{
 
 
 @media screen and (max-width:1200px) {
-nav{
-    display: none;
-}
-.desc{
-    background-color: transparent;
-}
-.desc h3{
-    font-size: 16px;
-}
-.desc p{
-    font-size: 14px;
-}
+    nav {
+        display: none;
+    }
+
+    .desc {
+        background-color: transparent;
+    }
+
+    .desc h3 {
+        font-size: 16px;
+    }
+
+    .desc p {
+        font-size: 14px;
+    }
 
     @media screen and (max-width:768px) {
-        header{
+        header {
             justify-content: space-between;
-    
+
         }
-        nav{
+
+        nav {
             display: none;
         }
-        .about{
+
+        .about {
             width: 500px;
             /* background-color: wheat; */
         }
-        .profile{
+
+        .profile {
             display: block;
         }
-        .imagy{
+
+        .imagy {
             width: 100%;
             width: fit-content;
             outline: none;
             margin-bottom: 30px;
         }
-        .desc{
+
+        .desc {
             margin-top: 10px;
             text-align: justify;
             width: 100%;
@@ -309,29 +338,35 @@ nav{
             background: transparent;
             /* border: 2px solid red; */
         }
-        .desc h3,span{
+
+        .desc h3,
+        span {
             margin-top: 5px;
             /* line-height: 28px; */
             font-size: 18px;
         }
-        .desc p{
+
+        .desc p {
             line-height: 18px;
-            padding-left:30px;
+            padding-left: 30px;
         }
-        .desc .action{
+
+        .desc .action {
             position: relative;
             display: flex;
             /* top: -15px; */
             /* left: 170px; */
             /* float: right; */
         }
-        .extra{
+
+        .extra {
             /* margin-top: 110px; */
             float: left;
             display: flex;
             position: relative;
         }
-        .box{
+
+        .box {
             width: 200px;
         }
     }

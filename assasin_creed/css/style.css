@@ -12,8 +12,7 @@
 body {
   background-color: black;
   color: whitesmoke;
-  background-image: url(/assasin_creed/images/R2.jpg);
-  /* background-image: url(/images/valhala.jpg); */
+  background-image: url(/assasin_creed/images/back3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -22,8 +21,6 @@ body {
 
 section {
   height: 100vh;
-  /* background:linear-gradient(45deg, red,blue); */
-  /* padding: 0 40px; */
 }
 
 .content {
@@ -35,6 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  background-color: black;
 }
 
 .logo {
@@ -48,7 +46,6 @@ span {
 nav {
   display: flex;
   justify-content: center;
-  /* margin: 0 50px; */
   font-size: 18px;
   flex: 1;
 }
@@ -88,12 +85,25 @@ label #cancel {
   display: none;
 }
 
+
+
+
+
 .btn {
-  padding: 5px 22px;
+  padding: 10px 20px;
   background-color: red;
   color: white;
   font-weight: bold;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
 }
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
 
 .text {
   margin-top: 70px;
@@ -101,12 +111,11 @@ label #cancel {
   left: 50px;
   top: 50px;
   position: relative;
-  /* background:linear-gradient(to right,black,rgba(255, 255, 255, 0.064)); */
   width: 70%;
 }
 
 .heading {
-  font-size: 53px;
+  font-size: 55px;
 }
 
 .desc {
@@ -115,27 +124,61 @@ label #cancel {
   line-height: 27px;
 }
 
+.desc p {
+  line-height: 39px;
+  /* color: gold; */
+}
+
 .butns {
   display: flex;
   margin-top: 30px;
   gap: 30px;
 }
 
-.butns .btn1 {
-  padding: 10px 15px;
+.butns .btn1,
+.butns .btn2 {
+  padding: 10px 20px;
+  /* Increased padding for better button size */
+  border-radius: 5px;
+  /* Rounded corners */
   background-color: red;
   color: white;
   border: 2px solid transparent;
-  transition: 0.5s;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* Make text uppercase */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Smooth transition for all properties */
 }
 
-.butns .btn2 {
-  padding: 10px 15px;
-  background-color: red;
-  color: white;
-  border: 2px solid transparent;
-  transition: 0.5s;
+.butns .btn1:hover,
+.butns .btn2:hover {
+  background-color: darkred;
+  /* Darker background on hover */
+  border-color: white;
+  /* Add a border on hover */
+  transform: scale(1.05);
+  /* Slightly increase size */
 }
+
+.butns .btn1:focus,
+.butns .btn2:focus {
+  outline: none;
+  /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+  /* Add custom focus outline */
+}
+
+.butns .btn1:active,
+.butns .btn2:active {
+  background-color: orangered;
+  /* Maintain dark color when button is pressed */
+  transform: scale(0.98);
+  /* Slightly shrink button on click */
+}
+
 
 footer {
   background-color: red;
