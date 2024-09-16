@@ -1,185 +1,185 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
     border: none;
+    list-style-type: none;
     scroll-behavior: smooth;
-    list-style: none;
-    /* background: white;
-    color: black; */
 }
-body{
-    /* overflow: hidden; */
 
-    }
-    /* .container{
-        height: 80vh;
-    } */
-
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
+body {
     background-color: black;
-    /* padding: 15px 23px; */
+    color: whitesmoke;
+    background-image: url(/assasin_creed/images/back3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    /* overflow: hidden; */
+    height: 100vh;
 }
-.logo{
-    float: left;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
 }
-span{
+
+.logo {
+    color: white;
+}
+
+.logo span {
     color: red;
 }
-nav{
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    flex: 1;
-    
+
+#nav-toggle {
+    display: none;
 }
-ul{
+
+.nav-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-icon #menu-icon,
+.nav-icon #close-icon {
+    color: white;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
     display: flex;
     justify-content: space-between;
 }
-li{
+
+nav li {
     padding: 0 20px;
-    
-}
-li a{
-    color: white;
-    text-transform: uppercase;
 }
 
-li a:hover{
+nav a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
     color: red;
-    cursor: pointer;
-}.btn{
-    padding: 5px 22px;
+}
+
+.btn {
+    padding: 10px 20px;
     background-color: red;
     color: white;
     font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
 }
-.btn:hover{
+
+.btn:hover {
+    background-color: white;
+    color: black;
     cursor: pointer;
 }
-#trial{
-    height: 92.3vh;
-    background-color:black;
-}
 
-.background{
-    position: absolute;
-    opacity: 0.2;
-    overflow: visible;
-    width: 100%;
-    height: 90vh;
-}
-.home{
-    display: flex;
-    justify-content: space-around;
-    /* height: 50vh; */
-    /* padding: 3px 30px; */
-}
-
-.image-gallery{
-     padding: 3px 30px;
-    width: 50%;
-    height: 94vh;
-    max-height: 100%;
-    background-color: black;
-    position: relative;
-    top: 40px;
-}
-.mage{
-   width: 10;
-   /* height: 40vh; */
-    /* background-color: red; */
-    border: 2px solid yellow;
-}
-.row{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    top: 100px;
-
-    /* margin: 0 5px; */
-}
-.box{
-    margin: 0 15px;
-}
-.text{
-    width: 50%;
-    padding: 30px;
-    line-height: 27px;
-    font-size: 17px;
-    background-color: black;
-    color: white;
-}
-h2{
-    text-transform: uppercase;
-    text-align: center;
+.heading span {
     color: red;
 }
-.text p{
-    text-align: justify;
+
+/* Mobile Styles */
+@media (max-width: 425px) {
+    #nav-toggle {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    #close-icon {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.904);
+        width: 100%;
+        height: 30vh;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav li {
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    #nav-toggle:checked~nav {
+        display: flex;
+    }
+
+    #nav-toggle:checked~.nav-icon #menu-icon {
+        display: none;
+    }
+
+    #nav-toggle:checked~.nav-icon #close-icon {
+        display: block;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .desc {
+        position: relative;
+        top: -150px;
+    }
+
 }
 
+@media screen and (min-width: 768px) and (max-width:860px) {
+    #nav-toggle {
+        display: none;
+    }
 
+    .text {
+        width: 100%;
+    }
 
+    .desc {
+        padding-top: 150px;
+        width: 100%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-.image-container{
-    width: 400px;
-    height: 700px;
-    position: relative;
-    /* perspective: 800px; */
-    background-color: transparent;
-    /* margin: 0 auto; */
-    /* display: inline-block;
-    display: none; */
-}
-.drum{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    animation: rotate 10s linear infinite;
-    transform-origin: center center;
-    background-color: transparent;
-}
-
-.image-container .image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    backface-visibility: hidden;
-    /* border-radius: 145em; */
-}
-.image:not(:first-child) {
-    transform: rotateY(180deg);
-}
-.image:nth-child(2){
-    animation-delay: 3.33s;
-}
-.image:nth-child(3) {
-    animation-delay: 6.66s;
-    /* display: none; */
-}
-@keyframes rotate {
-    0% { transform: rotateY(0deg);}
-   
-    100% {transform: rotateY(-360deg);}
+    .desc p {
+        text-align: justify;
+        padding: 0 40px;
+        width: 700px;
+    }
 }

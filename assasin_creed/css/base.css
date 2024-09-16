@@ -7,6 +7,7 @@
     outline: none;
     border: none;
     list-style-type: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,13 +18,15 @@ body {
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
+    /* overflow: hidden; */
+    height: 100vh;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: black;
 }
 
@@ -33,6 +36,10 @@ header {
 
 .logo span {
     color: red;
+}
+
+#nav-toggle {
+    display: none;
 }
 
 .nav-icon {
@@ -70,7 +77,7 @@ nav a:hover {
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 10px 0px;
     background-color: red;
     color: white;
     font-weight: bold;
@@ -149,6 +156,12 @@ nav a:hover {
     .btn {
         display: none;
     }
+
+    .desc {
+        position: relative;
+        top: -150px;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width:860px) {
@@ -158,12 +171,10 @@ nav a:hover {
 
     .text {
         width: 100%;
-        /* background-color: beige; */
     }
 
     .desc {
-        /* background-color: aqua; */
-        padding-top: 240px;
+        padding-top: 150px;
         width: 100%;
     }
 
@@ -171,7 +182,6 @@ nav a:hover {
         text-align: justify;
         padding: 0 40px;
         width: 700px;
-        /* font-size: 40px; */
     }
 }
 
@@ -181,7 +191,7 @@ nav a:hover {
     left: 50px;
     top: 50px;
     position: relative;
-    width: 70%;
+    width: 80%;
 }
 
 .heading {
@@ -189,13 +199,14 @@ nav a:hover {
 }
 
 .desc {
-    width: 40%;
+    width: 50%;
     margin-top: 40px;
     line-height: 27px;
 }
 
 .desc p {
     line-height: 39px;
+    font-size: 24px;
 }
 
 .butns {
@@ -220,8 +231,9 @@ nav a:hover {
 
 .butns .btn1:hover,
 .butns .btn2:hover {
-    background-color: darkred;
+    background-color: white;
     border-color: white;
+    color: black;
     transform: scale(1.05);
 }
 
@@ -258,61 +270,82 @@ footer .patners {
 }
 
 /* Responsive styles */
+
 @media (max-width: 1024px) {
     .text {
-        width: 80%;
-        left: 0;
+        width: 90%;
+        left: 40;
+        padding-left: 40px;
     }
 
     .heading {
-        font-size: 45px;
+        font-size: 60px;
+        font-weight: bold;
+        /* text-indent: 40px; */
+        padding-left: 20px;
     }
 
     .desc {
-        width: 60%;
+        width: 80%;
+        margin-top: 70px;
     }
 
     .desc p {
-        line-height: 30px;
+        line-height: 40px;
+        font-size: 22px;
+        margin-bottom: 40px;
     }
 
     .butns {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 20px;
     }
 
     .butns .btn1,
     .butns .btn2 {
-        width: 100%;
+        width: 50%;
         text-align: center;
     }
 }
 
 @media (max-width: 768px) {
     .text {
-        width: 90%;
-        margin-top: 50px;
+        width: 80%;
+        padding: 20px;
+        /* background-color: red; */
+        /* margin-top: 50px; */
     }
 
     .heading {
-        font-size: 35px;
+        font-size: 65px;
+        font-weight: bold;
+        /* padding-left: 60px; */
+        /* text-indent: 40px; */
         text-align: center;
     }
 
     .desc {
-        width: 80%;
-        margin-top: 20px;
+        width: 100%;
+        margin-top: -10px;
         text-align: center;
     }
 
     .desc p {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 19px;
+        line-height: 34px;
+        width: 100%;
+        margin-top: -80px;
     }
 
     .butns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 15px;
+        flex-direction: row;
+        position: relative;
+        left: 40px;
     }
 
     .butns .btn1,
@@ -352,6 +385,8 @@ footer .patners {
     .butns {
         flex-direction: column;
         gap: 10px;
+        position: relative;
+        left: 0;
     }
 
     .butns .btn1,
