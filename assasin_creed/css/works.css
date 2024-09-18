@@ -111,6 +111,42 @@ li a:active {
 
 }
 
+/* Style the circular progress bar container */
+.progress-circle-container {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* Style the SVG circle */
+/* Style the circular progress bar container */
+.progress-circle-container {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Styling the background circle */
+.progress-bg {
+    stroke: #f3f3f3;
+}
+
+/* Styling the actual progress circle */
+#progressCircle {
+    stroke: #4caf50;
+    stroke-dasharray: 251.2;
+    /* Circumference = 2 * π * r (r = 40) */
+    stroke-dashoffset: 251.2;
+    /* Initially set the stroke-dashoffset to 100% of circumference */
+    transition: stroke-dashoffset 0.25s;
+}
+
+circle {
+    stroke-linecap: round;
+}
+
 
 
 #portfolio {
@@ -126,9 +162,6 @@ li a:active {
 .port {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* position: relative; */
-
 }
 
 .text-box {
@@ -243,27 +276,4 @@ li a:active {
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     border: 2px solid white;
-}
-
-
-
-@media screen and (max-width:1200px) {
-
-
-
-    @media screen and (max-width:768px) {
-        header {
-            justify-content: space-between;
-
-        }
-
-        nav {
-            display: none;
-        }
-
-        .about {
-            width: 500px;
-            /* background-color: wheat; */
-        }
-    }
 }

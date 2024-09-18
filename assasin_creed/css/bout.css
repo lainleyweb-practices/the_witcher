@@ -164,10 +164,6 @@ nav a:hover {
         display: none;
     }
 
-    .desc {
-        position: relative;
-        top: -150px;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width:860px) {
@@ -175,20 +171,7 @@ nav a:hover {
         display: none;
     }
 
-    .text {
-        width: 100%;
-    }
-
-    .desc {
-        padding-top: 150px;
-        width: 100%;
-    }
-
-    .desc p {
-        text-align: justify;
-        padding: 0 40px;
-        width: 700px;
-    }
+    
 }
 
 
