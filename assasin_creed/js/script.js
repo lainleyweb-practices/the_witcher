@@ -30,3 +30,4 @@ function updateProgressCircle() {
     var offset = circumference - (scrollPercent / 100) * circumference;
     document.getElementById("progressCircle").style.strokeDashoffset = offset;
 }
+
