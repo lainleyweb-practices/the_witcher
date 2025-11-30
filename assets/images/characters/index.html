@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Characters Showcase</title>
+    <style>
+        body { background-color: #2d2d2d; color: white; }
+        .scene { width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; }
+        a-entity { cursor: pointer; }
+    </style>
+</head>
+<body>
+<div class="scene">
+    <a-scene embedded antialias>
+        <a-assets>
+            <img id="characterSprite" src="/assets/images/characters/threed_characters.glb">
+        </a-assets>
+
+        <!-- 3D Model -->
+        <a-entity gltf-model="#characterSprite" scale="0.1 0.1 0.1"></a-entity>
+
+    </a-scene>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/aframe@latest/dist/aframe.min.js"></script>
+</body>
+</html>
